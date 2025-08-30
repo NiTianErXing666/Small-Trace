@@ -126,10 +126,7 @@ Interceptor.attach(android_dlopen_ext, {
 - 内存读写监控与 hexdump 展示
 - 寄存器状态变化追踪
 
-### 📊 系统调用分析
-- **SVC (Supervisor Call)** 调用监控
-- 系统调用参数解析
-- 内核接口调用追踪
+
 
 ### 🛠 模块化设计
 - 独立的 SO 库，可集成到任何 Android 项目
@@ -457,5 +454,6 @@ qdbi/
 - Email: [1518936272@qq.com]
 
 ---
+
 
 **⭐ 如果这个项目对你有帮助，请考虑给它一个 Star！**
