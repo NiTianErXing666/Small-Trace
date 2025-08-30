@@ -44,7 +44,7 @@ int Calvin_Trace_offset(char *soName,unsigned long addr,int args){
     kHooks[2] = (char*)"libart.so";
     gqb_init_all(buf, kHooks, (int)(sizeof(kHooks)/sizeof(kHooks[0])));
 
-    gqb_hook_rva("libqdbi.so", addr, /*argc*/args);
+    gqb_hook_rva(attach_so, addr, /*argc*/args);
 
     LOGD("Calvin_Trace_offset() 完成！");
 }
